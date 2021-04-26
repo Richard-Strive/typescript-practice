@@ -55,7 +55,10 @@ let aTuple:[string, number]= ["Richard", 24]
  }
 */
 
-let Name= 3
+let Name:string= "Richard"
+
+
+/// IN THE SIMPLE COMPONENT WE CAN DISCOVER WHAT INTERFACES ARE 
 
 
   return (
@@ -65,7 +68,7 @@ let Name= 3
         <p>
          The value {Name} is of {typeof Name} type! 
         </p>
-    <SimpleComponent message="This is a message passed from app.tsx "/>
+    <SimpleComponent name={Name}  message="this is a message passed from app.tsx "/>
       </header>
     </div>
   );
